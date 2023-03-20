@@ -1,0 +1,87 @@
+body{
+    font-family: Open-Sans, sans-serif;
+    font-size: 18px;
+    color: var(--main-text-color);
+}
+.link{
+    text-decoration: none;
+}
+.list{
+    list-style: none;
+}
+/*----------псевдокласси--------------*/
+:root{
+    --main-text-color: #555555;
+    --main-title-color: #303030;
+    --main-white: #ffffff;
+    --accent-color: #FF6C00;
+
+}
+/*--------------HEADER--------------*/
+
+.header {
+    background: var(--main-text-color);
+}
+.header-navigation {
+}
+.heder-logo {
+}
+.logo-img {
+}
+.header-menu {
+}
+.menu-item {
+}
+.menu-link {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: var(--main-white);
+}
+.menu-link:hover, .menu-link:focus,
+.header-tel:hover, .header-tel:focus
+{
+    color: var(--accent-color);
+}
+.header-tel {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--main-white);
+}
+.headeer-btn {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--main-white);
+    background: transparent;
+}
+.headeer-btn:hover, .headeer-btn:focus{
+    background: var(--accent-color);
+    cursor: pointer;
+}
+
+/*--------------HERO--------------*/
+.hero {
+}
+.media-list {
+}
+
+.media-list-item {
+}
+.media-link {
+}
+
+.title-top-text {
+}
+.hero-title {
+}
+.title-bottom-text {
+}
