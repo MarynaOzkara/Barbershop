@@ -3,6 +3,28 @@ body{
     font-size: 18px;
     color: var(--main-text-color);
 }
+p, h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding-left: 0;
+}
+button{
+    cursor: pointer;
+}
+address{
+    font-style: normal;
+}
+img{
+    display: block;
+}
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
 .link{
     text-decoration: none;
 }
@@ -13,6 +35,8 @@ body{
 :root{
     --main-text-color: #555555;
     --main-title-color: #303030;
+    --top-title-text: rgba(157, 164, 189, 0.6);
+    --contrast-text: #9DA4BD;
     --main-white: #ffffff;
     --accent-color: #FF6C00;
 
@@ -21,6 +45,7 @@ body{
 
 .header {
     background: var(--main-text-color);
+    padding-top: 32px;
 }
 .header-navigation {
 }
@@ -53,7 +78,7 @@ body{
     color: var(--main-white);
 }
 .headeer-btn {
-    font-family: 'Open Sans', sans-serif;
+    font-family: inherit;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -61,15 +86,20 @@ body{
     letter-spacing: 0.09em;
     text-transform: uppercase;
     color: var(--main-white);
+    padding: 12px 20px;
+    border: 1px solid var(--accent-color);
+    border-radius: 25px;
     background: transparent;
 }
 .headeer-btn:hover, .headeer-btn:focus{
     background: var(--accent-color);
-    cursor: pointer;
 }
 
 /*--------------HERO--------------*/
 .hero {
+    background: var(--main-text-color);
+    padding-top: 272px;
+    padding-bottom: 208px;
 }
 .media-list {
 }
@@ -77,11 +107,247 @@ body{
 .media-list-item {
 }
 .media-link {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: var(--main-title-color);
+}
+.media-link:hover, .media-link:focus{
+    color: var(--accent-color);
 }
 
 .title-top-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: var(--top-title-text);
 }
 .hero-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+    color: var(--main-white);
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .title-bottom-text {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: var(--contrast-text);
+}
+
+/*--------------ABOUT--------------*/
+
+.about {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.img-list {
+}
+.img-list-item {
+}
+.top-title-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: var(--main-title-color);
+}
+.main-title {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    color: var(--main-title-color);
+    margin-top: 20px;margin-bottom: 20px;
+}
+.bottom-title-text {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+    margin-bottom: 20px;
+}
+.main-text {
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+    margin-bottom: 42px;
+
+}
+.main-btn {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--main-title-color);
+    padding: 12px 20px;
+    border: 1px solid var(--accent-color);
+    border-radius: 25px;
+    background: transparent;
+}
+.main-btn:hover, .main-btn:focus{
+    color: var(--main-white);
+    background: var(--accent-color);
+}
+
+/*--------------PRICE--------------*/
+
+.price {
+    background: var(--main-text-color);
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.title-top-text {
+}
+.price-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 42px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    color: var(--main-white);
+    margin-top: 20px;
+    margin-bottom: 44px;
+}
+.first-price-list {
+    width: 570px;
+    padding: 30px 20px;
+    background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+.first-price-item:not(:last-child){
+    margin-bottom: 20px;
+}
+.price-text {
+    font-weight: 400;
+font-size: 18px;
+line-height: 1.67;
+letter-spacing: 0.02em;
+color: var(--contrast-text);
+}
+.second-price-list {
+    width: 570px;
+    padding: 30px 20px;
+    background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+.second-price-item:not(:last-child){
+    margin-bottom: 20px;
+}
+.price-btn {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--main-white);
+    padding: 12px 20px;
+    border: 1px solid var(--accent-color);
+    border-radius: 25px;
+    background: transparent;
+    margin-top: 44px;
+}
+.price-btn:hover, .price-btn:focus{
+    background: var(--accent-color);
+}
+
+/*--------------FEATURES--------------*/
+
+.features {
+}
+.container {
+}
+.numbers-list {
+}
+.numres-list-item {
+}
+.numbers {
+}
+.numbers-text {
+}
+.top-features-text {
+}
+.features-title {
+}
+.bottom-features-text {
+}
+
+/*--------------BARBERS--------------*/
+
+.barbers {
+}
+.container {
+}
+.top-barbers-text {
+}
+.barbers-title {
+}
+.barbers-list {
+}
+.barbers-list-item {
+}
+.barbers-name {
+}
+.barbers-position {
+}
+
+/*--------------WORK--------------*/
+
+.work {
+}
+.container {
+}
+.top-work-text {
+}
+.work-title {
+}
+.work-list {
+}
+.work-list-item {
+}
+/*--------------BOOKING--------------*/
+
+.booking {
+}
+
+.booking-title {
+}
+.contacts {
+}
+.contacts-list {
+}
+
+.contacts-list-item {
+}
+.contacts-link {
+}
+
+.booking-subtitle {
+}
+.booking-text {
+}
+
+/*--------------FOOTER--------------*/
+
+.footer {
+}
+
+.copiright {
+}
+.footer-list {
+}
+
+.footer-list-item {
+}
+.media-link {
 }
