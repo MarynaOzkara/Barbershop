@@ -25,6 +25,9 @@ img{
     padding-right: 15px;
     margin: 0 auto;
 }
+.flex{
+    display: flex;
+}
 .link{
     text-decoration: none;
 }
@@ -40,6 +43,7 @@ img{
     --main-white: #ffffff;
     --accent-color: #FF6C00;
     --background-numbers: #F7F7F7;
+    --footer-color: #191C26;
 
 }
 /*--------------HEADER--------------*/
@@ -49,12 +53,22 @@ img{
     padding-top: 32px;
 }
 .header-navigation {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+.header-flex{
+    display: flex;
+    align-items: center;
 }
 .heder-logo {
+    margin-right: 130px;
 }
 .logo-img {
 }
 .header-menu {
+    display: flex;
+    gap: 30px;
 }
 .menu-item {
 }
@@ -79,6 +93,8 @@ img{
     color: var(--main-white);
 }
 .headeer-btn {
+    min-width: 160px;
+    height: 40px;
     font-family: inherit;
     font-style: normal;
     font-weight: 600;
@@ -87,10 +103,10 @@ img{
     letter-spacing: 0.09em;
     text-transform: uppercase;
     color: var(--main-white);
-    padding: 12px 20px;
     border: 1px solid var(--accent-color);
     border-radius: 25px;
     background: transparent;
+    margin-left: 43px;
 }
 .headeer-btn:hover, .headeer-btn:focus{
     background: var(--accent-color);
@@ -98,11 +114,14 @@ img{
 
 /*--------------HERO--------------*/
 .hero {
+}
+.hero-wrap{
     background: var(--main-text-color);
-    padding-top: 272px;
-    padding-bottom: 208px;
+    flex-grow: 1;
+    padding: 272px 100px 208px 100px;
 }
 .media-list {
+    width: 100px;
 }
 
 .media-list-item {
@@ -136,6 +155,7 @@ img{
     margin-bottom: 20px;
 }
 .title-bottom-text {
+    max-width: 360px;
     font-size: 18px;
     line-height: 1.67;
     letter-spacing: 0.02em;
@@ -149,6 +169,9 @@ img{
     padding-bottom: 120px;
 }
 .img-list {
+    display: flex;
+    gap: 30px;
+    margin-right: 30px;
 }
 .img-list-item {
 }
@@ -224,17 +247,17 @@ img{
     display: flex;
     gap: 30px;
 }
-.first-price-list {
-    width: calc(100% - 30px) / 2;
+.price-list {
+    width: calc((100% - 30px) / 2);
     padding: 30px 20px;
     background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
-.first-price-item{
+.price-item{
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
 }
-.first-price-item:last-child{
+.price-item:last-child{
     margin-bottom: 0px;
 }
 .price-text {
@@ -243,16 +266,6 @@ img{
     line-height: 1.67;
     letter-spacing: 0.02em;
     color: var(--contrast-text);
-}
-.second-price-list {
-    width: calc(100% - 30px) / 2;
-    padding: 30px 20px;
-    background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
-}
-.second-price-item{
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
 }
 .price-btn {
     width: 160px;
@@ -282,16 +295,19 @@ img{
     padding-top: 120px;
     padding-bottom: 120px;
 }
-.container {
+.features-wrap{
+    width: calc((100%) / 2);
 }
 .numbers-list {
-    max-width: 170px;
+    min-width: 170px;
     height: 133px;
     background: var(--background-numbers);
     display: flex;
+    
 }
 .numres-list-item {
     padding: 20px 24px;
+    border: 1px solid var(--footer-color);
 }
 .numbers {
     font-weight: 700;
@@ -316,6 +332,7 @@ img{
     color: var(--main-title-color);
 }
 .features-title {
+    max-width: 430px;
     font-family: 'Raleway', sans-serif;
     font-size: 42px;
     line-height: 1.16;
@@ -324,74 +341,173 @@ img{
     margin-top: 20px;margin-bottom: 20px;
 }
 .bottom-features-text {
+    max-width: 500px;
+    font-size: 18px;
+line-height: 1.67;
+letter-spacing: 0.02em;
 }
 
 /*--------------BARBERS--------------*/
 
 .barbers {
-}
-.container {
+    background: var(--background-numbers);
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 .top-barbers-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: var(--main-title-color);
 }
 .barbers-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    color: var(--main-title-color);
+    margin-top: 20px;
+    margin-bottom: 44px;
 }
 .barbers-list {
+    display: flex;
+    gap: 30px;
 }
 .barbers-list-item {
+    width: calc((100% - 60) / 3);
 }
 .barbers-name {
+    font-size: 18px;
+    line-height: 1.38;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--main-title-color);
+    margin-top: 30px;
+    margin-bottom: 8px;
 }
 .barbers-position {
+    font-size: 14px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
 }
 
 /*--------------WORK--------------*/
 
 .work {
-}
-.container {
+    padding: 120px 0;
 }
 .top-work-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: var(--main-title-color);
+    margin-bottom: 44px;
 }
 .work-title {
 }
 .work-list {
+    display: flex;
+    gap: 30px;
 }
 .work-list-item {
 }
 /*--------------BOOKING--------------*/
 
 .booking {
+    background: var(--footer-color);
+    padding-top: 130px;
+    padding-bottom: 120px;
 }
-
+.booking-flex{
+    display: flex;
+}
+.bookibg-wrap{
+    width: calc((100%) / 2);
+}
 .booking-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    color: var(--main-white);
 }
 .contacts {
+    margin-top: 40px;
+    margin-bottom: 70px;
 }
 .contacts-list {
 }
-
 .contacts-list-item {
+    margin-bottom: 20px;
 }
-.contacts-link {
+.contacts-list-item:last-child{
+    margin-bottom: 0;
+}
+.address-link {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: var(--contrast-text);
+}
+.contacts-link{
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: var(--contrast-text);
+}
+.email-link{
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: var(--contrast-text);
+    text-decoration-line: underline;
 }
 
 .booking-subtitle {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: var(--main-white);
+    margin-bottom: 20px;
 }
 .booking-text {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: var(--contrast-text);
 }
 
 /*--------------FOOTER--------------*/
 
 .footer {
+    padding: 56px 0;
 }
 
 .copiright {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: var(--contrast-text);
 }
 .footer-list {
+    display: flex;
 }
-
 .footer-list-item {
+    margin-left: 20px;
 }
-.media-link {
+.footer-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
