@@ -34,6 +34,33 @@ img{
 .list{
     list-style: none;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+.top-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.top-text::before{
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
+}
 /*----------псевдокласси--------------*/
 :root{
     --main-text-color: #555555;
@@ -44,6 +71,8 @@ img{
     --accent-color: #FF6C00;
     --background-numbers: #F7F7F7;
     --footer-color: #191C26;
+    --bg-gradient: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)) ;
+    --price-bg-gradient: linear-gradient(#111319, #111319);
 
 }
 /*--------------HEADER--------------*/
@@ -106,7 +135,8 @@ img{
     border: 1px solid var(--accent-color);
     border-radius: 25px;
     background: transparent;
-    margin-left: 43px;
+    margin-left: 44px;
+    margin-right: 24px;
 }
 .headeer-btn:hover, .headeer-btn:focus{
     background: var(--accent-color);
@@ -116,7 +146,13 @@ img{
 .hero {
 }
 .hero-wrap{
-    background: var(--main-text-color);
+    background-image:
+    var(--bg-gradient), 
+    url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--main-text-color);
     flex-grow: 1;
     padding: 272px 100px 208px 100px;
 }
@@ -137,11 +173,7 @@ img{
     color: var(--accent-color);
 }
 
-.title-top-text {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    text-transform: uppercase;
+.title-top-text{
     color: var(--top-title-text);
 }
 .hero-title {
@@ -175,11 +207,7 @@ img{
 }
 .img-list-item {
 }
-.top-title-text {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    text-transform: uppercase;
+.about-top-text {
     color: var(--main-title-color);
 }
 .main-title {
@@ -228,11 +256,17 @@ img{
 /*--------------PRICE--------------*/
 
 .price {
-    background: var(--main-text-color);
+    background-image:
+    url(../images/price-bg.png),
+    var(--price-bg-gradient);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding-top: 120px;
     padding-bottom: 120px;
 }
-.title-top-text {
+.price-top-text{
+    color: var(--top-title-text);
 }
 .price-title {
     font-family: 'Raleway', sans-serif;
@@ -324,11 +358,7 @@ img{
     text-align: center;
     color: var(--main-title-color);
 }
-.top-features-text {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    text-transform: uppercase;
+.featers-top-text {
     color: var(--main-title-color);
 }
 .features-title {
@@ -354,11 +384,7 @@ letter-spacing: 0.02em;
     padding-top: 120px;
     padding-bottom: 120px;
 }
-.top-barbers-text {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    text-transform: uppercase;
+.barbers-top-text {
     color: var(--main-title-color);
 }
 .barbers-title {
@@ -400,11 +426,7 @@ letter-spacing: 0.02em;
 .work {
     padding: 120px 0;
 }
-.top-work-text {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    text-transform: uppercase;
+.work-top-text {
     color: var(--main-title-color);
     margin-bottom: 44px;
 }
@@ -419,15 +441,25 @@ letter-spacing: 0.02em;
 /*--------------BOOKING--------------*/
 
 .booking {
-    background: var(--footer-color);
     padding-top: 130px;
     padding-bottom: 120px;
+    background-image: 
+    url(../images/contacts-bg.png),
+    var(--price-bg-gradient);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+   
 }
 .booking-flex{
     display: flex;
 }
 .bookibg-wrap{
     width: calc((100%) / 2);
+}
+.contacts-wrap{
+    padding-left: 100px;
+      
 }
 .booking-title {
     font-family: 'Raleway', sans-serif;
@@ -478,7 +510,16 @@ letter-spacing: 0.02em;
     text-transform: uppercase;
     color: var(--main-white);
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
+.booking-subtitle::before{  
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: var(--top-title-text);
+}     
 .booking-text {
     font-size: 18px;
     line-height: 1.67;
