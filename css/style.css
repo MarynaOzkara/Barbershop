@@ -256,9 +256,11 @@ img{
 /*--------------PRICE--------------*/
 
 .price {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #111319;
     background-image:
-    url(../images/price-bg.png),
-    var(--price-bg-gradient);
+    url(../images/price-bg.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -284,12 +286,28 @@ img{
 .price-list {
     width: calc((100% - 30px) / 2);
     padding: 30px 20px;
-    background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+.price-list:first-child{
+    background-image: 
+    linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+.price-list:last-child{
+    background-image:
+    linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
 .price-item{
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+}
+.price-item::before{
+    content: '';
+    width: 100px;
+    height: 1px;
+    background-color: var(--top-title-text);
+    flex-grow: 1;
 }
 .price-item:last-child{
     margin-bottom: 0px;
@@ -300,6 +318,9 @@ img{
     line-height: 1.67;
     letter-spacing: 0.02em;
     color: var(--contrast-text);
+}
+.price-text:first-child{
+    order: -1;
 }
 .price-btn {
     width: 160px;
@@ -328,28 +349,47 @@ img{
 .features {
     padding-top: 120px;
     padding-bottom: 120px;
+    padding-left: 85px;
 }
 .features-wrap{
     width: calc((100%) / 2);
 }
-.numbers-list {
-    min-width: 170px;
-    height: 133px;
-    background: var(--background-numbers);
+.numbers-list { 
     display: flex;
-    
+    width: 370px;
+    flex-wrap: wrap;  
+}
+.numres-list-item:nth-child(odd){
+    margin-right: 30px;
+}
+.numres-list-item:nth-child(even){
+    margin-top: 30px;
 }
 .numres-list-item {
+    width: 170px;
+    height: 133px;
     padding: 20px 24px;
-    border: 1px solid var(--footer-color);
+    background-color: var(--background-numbers);
 }
 .numbers {
     font-weight: 700;
     font-size: 42px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.05em;
     color: var(--main-title-color);
+    display: block;
+    text-align: center;
+    margin-bottom: 6px;
+}
+.numbers::after{
+    content: '+';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.37;
+    color: transparent;
+    text-align: center;
+    vertical-align: top;
+    text-shadow: 1px 6px 0 var(--accent-color);
 }
 .numbers-text {
     font-weight: 600;
@@ -360,6 +400,7 @@ img{
 }
 .featers-top-text {
     color: var(--main-title-color);
+    padding-top: 9px;
 }
 .features-title {
     max-width: 430px;
@@ -368,13 +409,14 @@ img{
     line-height: 1.16;
     letter-spacing: 0.05em;
     color: var(--main-title-color);
-    margin-top: 20px;margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-.bottom-features-text {
+.bottom-features-text{
     max-width: 500px;
     font-size: 18px;
-line-height: 1.67;
-letter-spacing: 0.02em;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
 }
 
 /*--------------BARBERS--------------*/
@@ -441,11 +483,13 @@ letter-spacing: 0.02em;
 /*--------------BOOKING--------------*/
 
 .booking {
+    max-width: 1600px;
+    margin: 0 auto;
     padding-top: 130px;
     padding-bottom: 120px;
+    background-color: #111319;
     background-image: 
-    url(../images/contacts-bg.png),
-    var(--price-bg-gradient);
+    url(../images/contacts-bg.png);
     background-repeat: no-repeat;
     background-position: top right;
     background-size: contain;
@@ -455,11 +499,10 @@ letter-spacing: 0.02em;
     display: flex;
 }
 .bookibg-wrap{
-    width: calc((100%) / 2);
+    width: 50%;
 }
 .contacts-wrap{
-    padding-left: 100px;
-      
+    width: 50%;  
 }
 .booking-title {
     font-family: 'Raleway', sans-serif;
@@ -470,8 +513,7 @@ letter-spacing: 0.02em;
     color: var(--main-white);
 }
 .contacts {
-    margin-top: 40px;
-    margin-bottom: 70px;
+  
 }
 .contacts-list {
 }
