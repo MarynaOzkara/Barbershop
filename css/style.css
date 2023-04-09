@@ -82,6 +82,7 @@ img{
     position: absolute;
     width: 100%;
     padding-top: 32px;
+    z-index: 100;
 }
 .header-navigation {
     display: flex;
