@@ -27,11 +27,13 @@
     
     /*--------------BARBERS--------------*/
     .barbers > .container{
-        width: 418px;
+        width: 448px;
     }
 
     /*--------------WORK--------------*/
-
+    .work-list-item{
+        flex-basis: 418px;
+    }
 
     
 }
@@ -150,19 +152,26 @@
     }
 
      /*--------------WORK--------------*/
+     .work > .container{
+        width: 768px;
+    }
      .work{
         padding-top: 100px;
         padding-bottom: 106px;
     }
-
-    .work-list {
+    .work-list{
         display: flex;
         flex-wrap: wrap;
-        gap: 40px 40px;
+        gap: 30px 30px;
+    }
+    .work-list-item{
+        flex-basis: calc((100% - 30px) / 2);
+        /* flex-basis: 330px; */
     }
     .work-list-item:not(:last-child){
         margin-bottom: 0;
     }
+   
 
     /*--------------FOOTER--------------*/
 
@@ -327,18 +336,21 @@
     }
 
        /*--------------WORK--------------*/    
-
-    .work-list {
-        display: flex;
-        gap: 30px;
+       .work > .container{
+        width: 1200px;
     }
     .work{
         padding-top: 120px;
         padding-bottom: 120px;
     }
-
-    /* .footer > .container{
-        width: 1200px;
-    }   */
+    .work-list {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 30px;
+    }
+    .work-list-item{
+        flex-basis: calc((100% - 90px) / 4);
+    }
+  
     
 }

@@ -572,8 +572,6 @@ img{
     color: var(--main-title-color);
     margin-bottom: 44px;
 }
-.work-title {
-}
 .work-list {
     display: flex;
     gap: 30px;

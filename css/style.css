@@ -22,6 +22,7 @@ img{
     display: block;
     max-width: 100%;
     height: auto;
+    width: 100%;
 }
 .container{
     width: 100%;
@@ -254,10 +255,13 @@ img{
     color: var(--main-title-color);
     margin-bottom: 71px;
 }
+
+.work-list-item{
+    flex-basis: 100%;
+}
 .work-list-item:not(:last-child){
     margin-bottom: 30px;
 }
-
 
 /*--------------FOOTER--------------*/
 
