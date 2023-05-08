@@ -245,6 +245,20 @@ img{
 
 }
 
+/*--------------WORK--------------*/
+.work{
+    padding-top: 84px;
+    padding-bottom: 84px;
+}
+.work-top-text {
+    color: var(--main-title-color);
+    margin-bottom: 71px;
+}
+.work-list-item:not(:last-child){
+    margin-bottom: 30px;
+}
+
+
 /*--------------FOOTER--------------*/
 
 .footer {

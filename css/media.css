@@ -29,6 +29,10 @@
     .barbers > .container{
         width: 418px;
     }
+
+    /*--------------WORK--------------*/
+
+
     
 }
 
@@ -143,6 +147,21 @@
     .barbers-title{
         font-size: 42px;
         line-height: 1.16;
+    }
+
+     /*--------------WORK--------------*/
+     .work{
+        padding-top: 100px;
+        padding-bottom: 106px;
+    }
+
+    .work-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px 40px;
+    }
+    .work-list-item:not(:last-child){
+        margin-bottom: 0;
     }
 
     /*--------------FOOTER--------------*/
@@ -305,6 +324,17 @@
     }
     .barbers-list-item:not(:last-child){
         margin-bottom: 0;
+    }
+
+       /*--------------WORK--------------*/    
+
+    .work-list {
+        display: flex;
+        gap: 30px;
+    }
+    .work{
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
 
     /* .footer > .container{
