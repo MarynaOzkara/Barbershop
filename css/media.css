@@ -166,7 +166,6 @@
     }
     .work-list-item{
         flex-basis: calc((100% - 30px) / 2);
-        /* flex-basis: 330px; */
     }
     .work-list-item:not(:last-child){
         margin-bottom: 0;
