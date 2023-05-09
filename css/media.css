@@ -137,6 +137,32 @@
         line-height: 1.66;
     }
 
+    /*--------------ABOUT--------------*/
+    .about {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .about-content{
+        display: flex;
+        gap: 30px;
+    }
+    .img-list{
+        width: 330px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .about-wrap{
+        max-width: 330px;
+    }
+    .main-title{
+        max-width: 330px;
+    }
+    .bottom-title-text{
+        font-size: 18px;
+        line-height: 1.16;
+    }
+
       /*--------------BARBERS--------------*/
     
       .barbers > .container{
@@ -215,13 +241,9 @@
     .heder-logo {
         margin-right: 130px;
     }
-    .logo-img {
-    }
     .header-menu {
         display: flex;
         gap: 30px;
-    }
-    .menu-item {
     }
     .menu-link {
         position: relative;
@@ -314,6 +336,31 @@
         font-size: 72px;
         line-height: 1.18;
     }
+
+     /*--------------ABOUT--------------*/
+     .about {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .img-list{
+        width: 570px;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+    .about-wrap{
+        max-width: 470px;
+    }
+    .main-title{
+        max-width: 470px;
+        font-size: 42px;
+        line-height: 1.16;
+    }
+    .bottom-title-text{
+        font-size: 18px;
+        line-height: 1.67;
+    }
+
      
     /*--------------BARBERS--------------*/
     .barbers > .container{
@@ -352,4 +399,12 @@
     }
   
     
+}
+
+
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+    .img-list{
+        display: none;
+    }
 }
