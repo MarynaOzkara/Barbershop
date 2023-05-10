@@ -163,6 +163,15 @@
         line-height: 1.16;
     }
 
+    /*----------------FEATURES----------------*/
+    .features{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .numbers-tab{
+        margin-left: auto;
+    }
+
     /*-------------------PRICE------------------*/
     .price {
         margin: 0 auto;
@@ -417,6 +426,7 @@
         background-image: unset;
         display: flex;
         gap: 30px;
+        padding: 0;
     }
     .price-list {
         width: calc((100% - 30px) / 2);
@@ -432,7 +442,24 @@
     }
     
       
-   
+     /*----------------FEATURES----------------*/
+     .features{
+        padding-top: 120px;
+        padding-bottom: 120px;
+        padding-left: 85px;
+    }
+    .feature-flex{
+        display: flex;
+        flex-direction: row;
+        gap: 130px;
+        
+    }
+    .features-title{
+        font-size: 42px;
+    }
+    .numbers-tab{
+        margin-left: 0;
+    }
 
      
     /*--------------BARBERS--------------*/
