@@ -475,6 +475,147 @@ img{
     margin-bottom: 30px;
 }
 
+/*--------------BOOKING--------------*/
+/* .booking-flex{
+    display: flex;
+} */
+/* .bookibg-wrap{
+    width: 50%;
+}
+.contacts-wrap{
+    width: 50%;  
+} */
+.booking {
+    margin: 0 auto;
+    padding-top: 84px;
+    padding-bottom: 84px;
+    background-color: #111319;
+    background-image: 
+    url(../images/footer-bg-mob.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+   
+}
+.booking-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    color: var(--main-white);
+    text-align: center;
+}
+.footer-form{
+    margin-bottom: 84px;
+}
+.footer-input{
+    padding: 0;
+    width: 100%;
+    height: 75px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--main-text-color);
+    font-size: 16px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    background-color: transparent;
+    transition: border-color var(--transform-function);
+}
+.footer-input:focus{
+    outline: none;
+    border-color: var(--main-white);
+}
+.footer-form-btn{
+    display: block;
+    margin: 0 auto;
+    margin-top: 44px;
+    margin-bottom: 84px;
+    width: 120px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--main-white);
+    border: 1px solid var(--accent-color);
+    border-radius: 25px;
+    background-color: transparent;
+    transition: background-color var(--transform-function), color var(--transform-function) ;
+
+}
+.footer-form-btn:hover, 
+.footer-form-btn:focus{
+    background-color: var(--accent-color);
+    color: var(--main-white);
+}
+.contacts-wrap{
+    padding-top: 84px;
+}
+.contacts{
+    margin-bottom: 40px;
+}
+.contacts-list {
+    margin-bottom: 44px;
+}
+.contacts-list-item {
+    margin-bottom: 20px;
+}
+.contacts-list-item:last-child{
+    margin-bottom: 0;
+}
+.address-link {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: var(--contrast-text);
+}
+.contacts-link{
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: var(--contrast-text);
+}
+.email-link{
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: var(--contrast-text);
+    text-decoration-line: underline;
+}
+
+.booking-subtitle {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: var(--main-white);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.booking-subtitle::before{  
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: var(--top-title-text);
+}     
+.booking-text {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: var(--contrast-text);
+}
+
+
 /*--------------FOOTER--------------*/
 
 .footer {
@@ -488,16 +629,16 @@ img{
     color: var(--contrast-text);
 }
 .footer-list {
+    max-width: 270px;
+    margin-bottom: 20px;
     display: flex;
     gap: 40px;
     align-items: center;
+    margin-left: auto;
 }
 .footer-list::before{
     content: '';
     width: 60px;
     height: 1px;
     background-color: currentColor;
-}
-.footer-wrap{
-    display: flex;
 }

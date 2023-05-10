@@ -234,6 +234,9 @@
     .work-list-item:not(:last-child){
         margin-bottom: 0;
     }
+
+    /*--------------BOOKING--------------*/
+   
    
 
     /*--------------FOOTER--------------*/
@@ -241,11 +244,17 @@
     .footer {
         padding: 56px 0;
     }
-    .footer-wrap{
+    /* .footer-wrap{
         display: flex;
+        flex-direction: row-reverse;
         align-items: center;
         justify-content: space-between;
-    }
+    } */
+    /* .footer-list{
+        
+        margin-left: 0;
+        margin-bottom: 0;
+    } */
   
     
 }
