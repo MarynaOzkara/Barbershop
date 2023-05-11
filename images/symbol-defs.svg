@@ -31,5 +31,19 @@
     <symbol id="icon-modal-close" viewBox="0 0 32 32">
     <path d="M32 3.223l-3.223-3.223-12.777 12.777-12.777-12.777-3.223 3.223 12.777 12.777-12.777 12.777 3.223 3.223 12.777-12.777 12.777 12.777 3.223-3.223-12.777-12.777 12.777-12.777z"></path>
     </symbol>
+    <symbol id="icon-phone" viewBox="0 0 32 32">
+    <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.7778" d="M30.221 23.116v4.291c0.003 0.805-0.333 1.575-0.927 2.119s-1.389 0.814-2.191 0.741c-4.401-0.478-8.628-1.982-12.342-4.391-3.456-2.196-6.385-5.125-8.581-8.581-2.417-3.731-3.921-7.979-4.391-12.4-0.072-0.8 0.195-1.593 0.736-2.186s1.307-0.931 2.11-0.932h4.291c1.436-0.014 2.659 1.038 2.86 2.46 0.181 1.373 0.517 2.721 1.001 4.019 0.393 1.045 0.142 2.224-0.644 3.018l-1.816 1.816c2.036 3.581 5.001 6.545 8.581 8.581l1.816-1.816c0.794-0.785 1.972-1.036 3.018-0.644 1.298 0.484 2.646 0.82 4.019 1.001 1.438 0.203 2.496 1.451 2.46 2.903z"></path>
+    </symbol>
+    <symbol id="icon-map-pin" viewBox="0 0 32 32">
+    <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3333" d="M26.667 13.818c0 7.636-10.667 14.182-10.667 14.182s-10.667-6.545-10.667-14.182c0-5.422 4.776-9.818 10.667-9.818s10.667 4.396 10.667 9.818v0z"></path>
+    <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3333" d="M16 18.667c2.209 0 4-1.791 4-4s-1.791-4-4-4-4 1.791-4 4c0 2.209 1.791 4 4 4z"></path>
+    </symbol>
+    <symbol id="icon-mail" viewBox="0 0 40 32">
+    <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M5.6 2h28.8c1.98 0 3.6 1.575 3.6 3.5v21c0 1.925-1.62 3.5-3.6 3.5h-28.8c-1.98 0-3.6-1.575-3.6-3.5v-21c0-1.925 1.62-3.5 3.6-3.5z"></path>
+    <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M36 6l-16 12-16-12"></path>
+    </symbol>
+    <symbol id="icon-mob-menu" viewBox="0 0 48 32">
+    <path d="M0 5.333v-5.333h48v5.333h-48zM0 18.667h48v-5.333h-48v5.333zM0 32h48v-5.333h-48v5.333z"></path>
+    </symbol>
   </defs>
 </svg>

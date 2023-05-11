@@ -46,8 +46,11 @@
         padding-left: 39px;
         padding-right: 39px;
     }
-
-
+    
+    /*--------------HEDER--------------*/
+    .mob-menu-open{
+        display: none;
+    }
     /*--------------HERO--------------*/
     .hero{
         background-image: unset;

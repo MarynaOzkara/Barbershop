@@ -82,9 +82,42 @@ img{
 
 }
 /*--------------HEADER--------------*/
-
-
-
+.header-menu, .header-tel, .header-btn{
+    display: none;
+}
+.header {
+    position: absolute;
+    width: 100%;
+    padding-top: 32px;
+    z-index: 100;
+}
+.logo-img{
+    width: 68px;
+    height: 54px;
+    background-color: #fff;
+}
+.header-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mob-menu-open{
+    display: block;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+}
+.mob-menu-open:hover .mob-menu-open-icon, 
+.mob-menu-open:focus .mob-menu-open-icon{
+    fill: var(--accent-color);
+}
+.mob-menu-open-icon{
+    width: 24px;
+    height: 16px;
+    fill: var(--main-white);
+    transition: fill var(--transform-function);
+}
 /*--------------HERO--------------*/
 .container{
     width: 100%;
