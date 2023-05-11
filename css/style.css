@@ -88,7 +88,7 @@ img{
 .header {
     position: absolute;
     width: 100%;
-    padding-top: 32px;
+    padding-top: 40px;
     z-index: 100;
 }
 .logo-img{
@@ -117,6 +117,97 @@ img{
     height: 16px;
     fill: var(--main-white);
     transition: fill var(--transform-function);
+}
+.mob-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--main-white);
+    z-index: 100;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity var(--transform-function), visibility var(--transform-function);
+}
+.mob-menu.is-open{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+.mob-container{
+    position: relative;
+    height: 100%;
+    padding-top: 118px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.mob-menu-close {
+    position: absolute;
+    top: 48px;
+    right: 21px;
+    background-color: transparent;
+    padding: 0;
+    line-height: 0;
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+.mob-menu-close-icon{
+    width: 18px;
+    height: 18px;
+    fill: var(--main-title-color);
+}
+.mob-menu-list {
+}
+.mob-menu-item:not(:last-child) {
+    margin-bottom: 24px;
+}
+.mob-menu-link {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.38;
+    letter-spacing: 0.1em;
+    color: var(--main-title-color);
+    transition: color var(--transform-function);
+}
+.mob-menu-link:hover,
+.mob-menu-link:focus{
+    color: var(--accent-color);
+}
+.mob-tel {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.38;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--main-title-color);
+    transition: color var(--transform-function);
+}
+.mob-tel:hover,
+.mob-tel:focus{
+    color: var(--accent-color);
+}
+.mob-oder-btn {
+    display: block;
+    min-width: 160px;
+    height: 40px;
+    margin-top: 24px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--main-title-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 25px;
+    background-color: transparent;
+    transition: background-color var(--transform-function);
 }
 /*--------------HERO--------------*/
 .container{

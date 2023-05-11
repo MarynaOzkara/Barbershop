@@ -28,22 +28,32 @@
                 </nav>
                 <a href="tel:+380441111111" class="header-tel link">+38 044 111 11 11</a>
                 <button type="button" class="header-btn" data-modal-open>Online-booking</button>   
-                <button type="button" class="mob-menu-open">
+                <button type="button" class="mob-menu-open" data-menu-open>
                     <svg class="mob-menu-open-icon">
                         <use href="./images/symbol-defs.svg#icon-mob-menu"></use>
                     </svg>
                 </button>
             </div>
-            <div class="mob-menu">
-                <button type="button" class="mob-menu-close">x</button>
-                <ul class="mob-menu-list list">
-                    <li class="mob-menu-item"><a href="#about" class="mob-menu-link link">About</a></li>
-                    <li class="mob-menu-item"><a href="#price" class="mob-menu-link link">Services and prices</a></li>
-                    <li class="mob-menu-item"><a href="#barbers" class="mob-menu-link link">Barbers</a></li>
-                    <li class="mob-menu-item"><a href="#contacts" class="mob-menu-link link">Contacts</a></li>
-                </ul>
-                <a href="tel:+380441111111" class="mob-tel link">+38 044 111 11 11</a>
-                <button type="button" class="mob-oder-btn" data-modal-open>Online-booking</button>
+            <div class="mob-menu" data-menu>
+                <div class="container mob-container">
+                    <div>
+                        <button type="button" class="mob-menu-close" data-menu-close>
+                            <svg class="mob-menu-close-icon">
+                                <use href="./images/symbol-defs.svg#icon-modal-close"></use>
+                            </svg>
+                        </button>
+                        <ul class="mob-menu-list list">
+                            <li class="mob-menu-item"><a href="#about" class="mob-menu-link link">About</a></li>
+                            <li class="mob-menu-item"><a href="#price" class="mob-menu-link link">Services and prices</a></li>
+                            <li class="mob-menu-item"><a href="#barbers" class="mob-menu-link link">Barbers</a></li>
+                            <li class="mob-menu-item"><a href="#contacts" class="mob-menu-link link">Contacts</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="tel:+380441111111" class="mob-tel link">+38 044 111 11 11</a>
+                        <button type="button" class="mob-oder-btn" data-modal-open>Online-booking</button>
+                    </div>
+                </div>
             </div>
         </header>
         <main>
@@ -421,10 +431,12 @@
                 </form>
             </div>
         </div> -->
-        <script src="./js/modal.js"></script>
+       
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
         </script>
+         <script src="./js/modal.js"></script>
+         <script src="./js/mob-menu.js"></script>
     </body>
     </html>
