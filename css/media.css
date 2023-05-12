@@ -48,8 +48,89 @@
     }
     
     /*--------------HEDER--------------*/
+   
     .mob-menu-open{
         display: none;
+    }
+    .header-menu{
+        display: flex;
+        gap: 20px;
+    }
+    .header-navigation {
+        display: flex;
+        align-items: center; 
+        margin-right: auto;
+    }
+    .heder-logo {
+        margin-right: 58px;
+    }
+    .menu-link {
+        position: relative;
+        display: block;
+        padding: 20px 0px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.33;
+        letter-spacing: 0.1em;
+        color: var(--main-white);
+        transition: color var(--transform-function);
+    }
+    .menu-link:hover, .menu-link:focus,
+    .header-tel:hover, .header-tel:focus
+    {
+        color: var(--accent-color);
+    }
+    .menu-link::after{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: var(--accent-color);
+        transform: scaleX(0);
+        transition: transform var(--transform-function);
+      }
+      .menu-link:hover::after{
+        transform: scaleX(1);
+      }
+      .heder-tab-button{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+    .header-tel{
+        order: 2;
+        display: block;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.33;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--main-white);
+        transition: color var(--transform-function);
+    }
+    .header-btn{
+        display: block;
+        min-width: 160px;
+        height: 40px;
+        font-family: inherit;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.33;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        color: var(--main-white);
+        border: 1px solid var(--accent-color);
+        border-radius: 25px;
+        background-color: transparent;
+        transition: background-color var(--transform-function);
+    }
+    .header-btn:hover, .header-btn:focus{
+        background-color: var(--accent-color);
     }
     /*--------------HERO--------------*/
     .hero{
@@ -192,8 +273,8 @@
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         .price {
-            background-image: 
-            var(--bg-gradient), 
+            background-color: #111319;
+            background-image:  
             url(../images/price-bg-tab@2x.jpg);
           }
      }
@@ -239,25 +320,60 @@
     }
 
     /*--------------BOOKING--------------*/
-   
-   
+    .footer-booking{
+        background-color: #111319;
+        background-image: 
+        url(../images/footer-bg-tab.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
+    }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .footer-booking {
+        background-image:  
+        url(../images/footer-bg-tab@2x.png);
+      }
+    }
+    .booking-wrap{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .booking-title{
+        text-align: left;
+    }
+    .footer-form-btn{
+        margin: 0;
+        margin-top: 44px;
+    }
+    .contacts-wrap{
+        padding-top: 30px;
+        padding-bottom: 100px;
+    }
+    .input-tab-flex{
+        display: flex;
+        gap: 30px;
+    }
+
 
     /*--------------FOOTER--------------*/
 
     .footer {
         padding: 56px 0;
     }
-    /* .footer-wrap{
+    .footer-list {
+        order: 2;
         display: flex;
-        flex-direction: row-reverse;
+        gap: 40px;
+        align-items: center;
+    }
+    .footer-wrap{
+        display: flex;
         align-items: center;
         justify-content: space-between;
-    } */
-    /* .footer-list{
-        
-        margin-left: 0;
-        margin-bottom: 0;
-    } */
+    
+    }
   
     
 }
@@ -295,6 +411,10 @@
         display: flex;
         gap: 30px;
     }
+    .heder-tab-button{
+        display: flex;
+        flex-direction: row;
+      }
     .menu-link {
         position: relative;
         display: block;
@@ -336,6 +456,7 @@
         transition: color var(--transform-function);
     }
     .header-btn {
+        order: 2;
         min-width: 160px;
         height: 40px;
         font-family: inherit;
@@ -424,13 +545,12 @@
         padding-top: 120px;
         padding-bottom: 120px;
     }    
-
      @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         .price {
-            background-image: 
-            var(--bg-gradient), 
+            background-color: #111319;
+            background-image:  
             url(../images/price-bg@2x.jpg);
           }
      }
@@ -509,8 +629,46 @@
     .work-list-item{
         flex-basis: calc((100% - 90px) / 4);
     }
-  
+
+     /*--------------BOOKING--------------*/ 
     
+     .footer-booking{
+        max-width: 1600px;
+        margin: 0 auto;
+        background-color: #111319;
+        background-image: 
+        url(../images/contacts-bg.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: contain;
+    }
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .footer-booking {
+            background-image:  
+            url(../images/footer-bg@2x.png);
+          }
+        }
+    .booking-flex{
+        display: flex;
+        gap: 30px;
+    } 
+    .booking-wrap{
+        padding-top: 130px;
+        width: calc(100% - 30px) / 2;
+        
+    }  
+    .contacts-wrap{
+        padding-top: 130px;
+        padding-bottom: 120px;
+        padding-left: 100px;
+    }
+    .footer-form{
+        width: 570px;
+    }
+    
+   
 }
 
 

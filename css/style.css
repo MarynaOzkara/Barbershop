@@ -337,6 +337,15 @@ img{
     padding-top: 84px;
     padding-bottom: 84px;
 }
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .price {
+    background-color: #111319;
+    background-image:  
+    url(../images/price-bg-mob@2x.png);
+  }
+}
 .price-top-text{
     color: var(--top-title-text);
 }
@@ -600,26 +609,25 @@ img{
 }
 
 /*--------------BOOKING--------------*/
-/* .booking-flex{
-    display: flex;
-} */
-/* .bookibg-wrap{
-    width: 50%;
-}
-.contacts-wrap{
-    width: 50%;  
-} */
-.booking {
-    margin: 0 auto;
-    padding-top: 84px;
-    padding-bottom: 84px;
+.footer-booking{
     background-color: #111319;
     background-image: 
     url(../images/footer-bg-mob.png);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
-   
+}
+@media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .footer-booking {
+        background-image:  
+        url(../images/footer-bg-mob@2x.png);
+      }
+    }
+.booking-wrap{
+    padding-top: 84px;
+    padding-bottom: 84px;
 }
 .booking-title {
     font-family: 'Raleway', sans-serif;
@@ -631,7 +639,6 @@ img{
     text-align: center;
 }
 .footer-form{
-    margin-bottom: 84px;
     position: relative;
 }
 .footer-input{
@@ -692,7 +699,6 @@ img{
     display: block;
     margin: 0 auto;
     margin-top: 44px;
-    margin-bottom: 84px;
     width: 120px;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -717,6 +723,7 @@ img{
 }
 .contacts-wrap{
     padding-top: 84px;
+    padding-bottom: 84px;
 }
 .contacts{
     margin-bottom: 40px;
@@ -737,6 +744,16 @@ img{
     line-height: 1.67;
     letter-spacing: 0.02em;
     color: var(--contrast-text);
+}
+.footer-contacts-icon{
+    width: 24px;
+    height: 24px;
+    stroke: var(--contrast-text);
+}
+.contacts-icon-wrap{
+    display: flex;
+    gap: 16px;
+    align-items: center;
 }
 .contacts-link{
     font-size: 18px;
@@ -802,4 +819,131 @@ img{
     width: 60px;
     height: 1px;
     background-color: currentColor;
+}
+/*--------------BACKDROP--------------*/
+
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background: var(--top-title-text);
+}
+.backdrop.is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 408px;
+    height: 500px;
+    background-color: var(--main-white);
+    transform: translate(-50%, -50%);
+    padding: 70px 24px 20px 24px;
+}
+.modal-close-btn{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+    border: 1px solid var(--accent-color);
+    border-radius: 50%;
+    background-color: #fff;
+    transition: background-color var(--transform-function);
+}
+.modal-close-btn:hover, 
+.modal-close-btn:focus{
+    background-color: var(--accent-color);
+
+}
+.modal-close-icon{
+    fill: var(--accent-color);
+}
+.modal-close-btn:hover .modal-close-icon,
+.modal-close-btn:focus .modal-close-icon{
+    fill: var(--main-white);
+}
+.modal-title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--main-title-color);
+    margin-bottom: 16px;
+}
+
+/*--------------MODAL-FORM--------------*/
+
+.modal-input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid var(--main-text-color);
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--main-title-color);
+    padding-left: 38px;
+    transition: border-color var(--transform-function);
+}
+.modal-input:focus{
+    outline: none;
+    border-color: var(--accent-color);
+}
+.modal-label{
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--main-text-color);
+    display: block;
+    margin-bottom: 4px;
+}
+.input-wrap{
+    position: relative;
+    margin-bottom: 8px;
+}
+.modal-form-icon{
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill var(--transform-function);
+}
+.modal-input:focus + .modal-form-icon{
+    fill: var(--accent-color);
+}
+.modal-form-btn{
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--main-title-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 25px;
+    background-color: transparent;
+    transition: background-color var(--transform-function), color var(--transform-function) ;
+
+}
+.modal-form-btn:hover, 
+.modal-form-btn:focus{
+    background-color: var(--accent-color);
+    color: var(--main-white);
 }

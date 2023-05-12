@@ -26,8 +26,10 @@
                         <li class="menu-item"><a href="#contacts" class="menu-link link">Contacts</a></li>
                     </ul>
                 </nav>
-                <a href="tel:+380441111111" class="header-tel link">+38 044 111 11 11</a>
-                <button type="button" class="header-btn" data-modal-open>Online-booking</button>   
+                <div class="heder-tab-button">
+                    <a href="tel:+380441111111" class="header-tel link">+38 044 111 11 11</a>
+                    <button type="button" class="header-btn" data-modal-open>Online-booking</button>
+                </div>   
                 <button type="button" class="mob-menu-open" data-menu-open>
                     <svg class="mob-menu-open-icon">
                         <use href="./images/symbol-defs.svg#icon-mob-menu"></use>
@@ -358,33 +360,54 @@
                     </ul>
                 </div>
             </section>
-            <!-- <section class="booking" id="contacts">
-                <div class="container">
-                   <div class="booking-flex">
-                        <div class="bookibg-wrap">
+            <section class="footer-booking" id="contacts">
+                <div class="container booking-flex">
+                   <div class="booking-wrap">
                             <h2 class="booking-title">Online-booking</h2>
                             <form class="footer-form">
-                                <input type="text" placeholder="Name*" name="name" id="name" class="footer-input">
-                                <input type="tel" placeholder="Phon*" name="tel" id="tel" class="footer-input">
+                                <div class="input-tab-flex">
+                                    <input type="text" placeholder="Name*" name="name" id="name" class="footer-input">
+                                    <input type="tel" placeholder="Phon*" name="tel" id="tel" class="footer-input">
+                                </div>
                                 <input type="text" placeholder="Your message" name="massege" id="massege" class="footer-message-input">
                                 <button type="submit" class="footer-form-btn">Send</button>
                             </form>
-                        </div>
-                        <div class="contacts-wrap">
+                    </div>
+                    <div class="contacts-wrap">
                             <h2 class="booking-title contacts">Contacts</h2>
                             <address class="contacts">
                                 <ul class="contacts-list list">
-                                    <li class="contacts-list-item"><a class="address-link link" href="https://goo.gl/maps/VFDKG58W57x9aGTC8" rel="noopener noreferrer">st. Gonsiori 7A, Tallinn, 08132</a></li>
-                                    <li class="contacts-list-item"><a class="contacts-link link" href="tel:+380441111111">+38 044 111 11 11</a></li>
-                                    <li class="contacts-list-item"><a class="email-link link" href="mailto:barbershop@email.com">barbershop@email.com</a></li>
+                                    <li class="contacts-list-item">
+                                            <div class="contacts-icon-wrap">
+                                                <svg class="footer-contacts-icon">
+                                                    <use href="./images/symbol-defs.svg#icon-map-pin"></use>
+                                                </svg>
+                                                <a class="address-link link" href="https://goo.gl/maps/VFDKG58W57x9aGTC8" rel="noopener noreferrer">st. Gonsiori 7A, Tallinn, 08132</a>
+                                            </div>
+                                    </li>   
+                                    <li class="contacts-list-item">
+                                        <div class="contacts-icon-wrap">
+                                            <svg class="footer-contacts-icon">
+                                                <use href="./images/symbol-defs.svg#icon-phone"></use>
+                                            </svg>
+                                            <a class="contacts-link link" href="tel:+380441111111">+38 044 111 11 11</a>
+                                        </div>    
+                                    </li>
+                                    <li class="contacts-list-item">
+                                        <div class="contacts-icon-wrap">
+                                            <svg class="footer-contacts-icon">
+                                                <use href="./images/symbol-defs.svg#icon-mail"></use>
+                                            </svg>
+                                            <a class="email-link link" href="mailto:barbershop@email.com">barbershop@email.com</a>
+                                        </div>    
+                                    </li>
                                 </ul>
                             </address>
                             <h3 class="booking-subtitle">Working hours</h3>
                             <p class="booking-text">Every day from 9:00 to 22:00</p>
-                        </div>
-                   </div>
+                    </div>
                 </div>
-            </section> -->
+            </section>
         </main>
         <footer class="footer">
             <div class="container">
@@ -397,7 +420,7 @@
                 </div>
             </div>
         </footer> 
-        <!-- <div class="backdrop is-hidden" data-modal>
+        <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <button class="modal-close-btn" type="button" data-modal-close>
                     <svg class="modal-close-icon" width="8" height="8">
@@ -430,13 +453,13 @@
                     <button type="submit" class="modal-form-btn">Send</button>
                 </form>
             </div>
-        </div> -->
-       
+        </div>
+        <script src="./js/modal.js"></script>
+        <script src="./js/mob-menu.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
         </script>
-         <script src="./js/modal.js"></script>
-         <script src="./js/mob-menu.js"></script>
+         
     </body>
     </html>
