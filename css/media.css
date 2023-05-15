@@ -3,7 +3,8 @@
 
 @media screen and (min-width: 480px) {
     .container{
-        width: 480px;
+        /* width: 480px; */
+        width: 100%;
         padding-left: 31px;
         padding-right: 31px;
         margin: 0 auto;
@@ -31,6 +32,9 @@
     }
 
     /*--------------WORK--------------*/
+    .barbers > .container{
+        width: 100%;
+    }
     .work-list-item{
         flex-basis: 418px;
     }
