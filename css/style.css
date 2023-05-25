@@ -220,7 +220,7 @@ img{
     width: 100%;
     background-image: 
     var(--bg-gradient), 
-    url(../images/hero-mob-img.jpg);
+    url(../images/slider/hero-mob-img.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -233,7 +233,7 @@ img{
   .hero {
     background-image: 
     var(--bg-gradient), 
-    url(../images/hero-mob-img@2x.jpg);
+    url(../images/slider/hero-mob-img@2x.jpg);
   }
 }
 .hero-title {

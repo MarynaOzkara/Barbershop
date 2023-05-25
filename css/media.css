@@ -146,7 +146,7 @@
         display: block;
         background-image:
         var(--bg-gradient), 
-        url(../images/hero-tab-img.jpg);
+        url(../images/slider/hero-tab-img.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -160,7 +160,7 @@
     .hero-wrap {
         background-image: 
         var(--bg-gradient), 
-        url(../images/hero-tab-img@2x.jpg);
+        url(../images/slider/hero-tab-img@2x.jpg);
       }
     }
     .hero-social{
@@ -486,7 +486,7 @@
     .hero-wrap{
             background-image:
             var(--bg-gradient), 
-            url(../images/hero-img.jpg);
+            url(../images/slider/hero-img.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -500,7 +500,7 @@
             .hero-wrap {
                 background-image: 
                 var(--bg-gradient), 
-                url(../images/hero-img@2x.jpg);
+                url(../images/slider/hero-img@2x.jpg);
         }
     }       
     .hero-social{
