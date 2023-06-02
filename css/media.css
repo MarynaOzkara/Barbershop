@@ -68,6 +68,9 @@
     .heder-logo {
         margin-right: 58px;
     }
+    .logotyp{
+        fill: var(--main-text-color);
+     }
     .menu-link {
         position: relative;
         display: block;
@@ -143,6 +146,7 @@
         padding: 0;
     }
     .hero-wrap{
+        position: relative;
         display: block;
         background-image:
         var(--bg-gradient), 
@@ -162,6 +166,42 @@
         var(--bg-gradient), 
         url(../images/slider/hero-tab-img@2x.jpg);
       }
+    }
+    .slider-buttons{
+        position: absolute;
+        bottom: 34px;
+        right: 16px;
+        display: flex;
+        gap: 24px;
+    }
+    .slider-btn{
+        display: block;
+        width: 60px;
+        height: 24px;
+        padding: 0;
+        padding-bottom: 8px;
+        background-color: transparent;
+        border: 0;
+        border-bottom: 1px solid var(--contrast-text);
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: calc(15 / 11);
+        letter-spacing: 0.1em;
+        color: var(--contrast-text);
+        transition: color var(--transform-function), border-bottom var(--transform-function);
+    }
+    .slider-btn:hover, 
+    .slider-btn:focus{
+        color: var(--main-white);
+        border-bottom: 1px solid var(--main-white);
+    }
+    .prev{
+        text-align: left;
+    }
+    .next{
+        text-align: right;
     }
     .hero-social{
         width: 116px;
@@ -484,6 +524,7 @@
 
            /*--------------HERO--------------*/
     .hero-wrap{
+            position: relative;
             background-image:
             var(--bg-gradient), 
             url(../images/slider/hero-img.jpg);
@@ -502,6 +543,10 @@
                 var(--bg-gradient), 
                 url(../images/slider/hero-img@2x.jpg);
         }
+    }
+    .slider-buttons{
+        bottom: 40px;
+        right: 20px;
     }       
     .hero-social{
         width: 100px;

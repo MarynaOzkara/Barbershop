@@ -91,10 +91,13 @@ img{
     padding-top: 40px;
     z-index: 100;
 }
-.logo-img{
+.heder-logo{
+    display: block;
     width: 68px;
     height: 54px;
-    background-color: #fff;
+}
+.logotyp{
+   fill: var(--main-white);
 }
 .header-flex{
     display: flex;
